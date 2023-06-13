@@ -1,0 +1,26 @@
+.cartitem {
+  max-width: 850px;
+  height: 130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cartitem > div {
+  display: flex;
+  align-items: center;
+  /* flex: 1; */
+}
+
+.cartitem_img {
+  object-fit: contain;
+  width: 100px;
+}
+
+.cartitem_amount {
+  /* display: flex; */
+  flex: 0.3;
+  align-items: center;
+  justify-content: space-evenly;
+}

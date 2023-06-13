@@ -1,0 +1,17 @@
+.navbar {
+  max-width: 1500px;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #cc8800;
+  color: white;
+}
+
+h1 {
+  font-weight: 600;
+}
+.cart {
+  width: 40px !important;
+  height: 40px !important;
+}

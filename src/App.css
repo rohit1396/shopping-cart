@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Pathway Extreme", sans-serif;
+  font-family: "Rajdhani", sans-serif;
+}
+
+.loading {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 50px 0;
+}
