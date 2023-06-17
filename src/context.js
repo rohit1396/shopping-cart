@@ -6,7 +6,7 @@ const CartContext = createContext();
 
 const initialState = {
   loading: false,
-  cart: null,
+  cart: [],
   amount: 0,
   total: 0,
 };
@@ -47,6 +47,10 @@ export const CartProvider = ({ children }) => {
   useEffect(() => {
     fetchData();
   }, []);
+
+  useEffect(() => {
+    dispatch({ type: "GET_TOTALS" });
+  }, [state.cart]);
   return (
     <CartContext.Provider
       value={{
