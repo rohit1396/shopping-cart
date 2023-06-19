@@ -8,9 +8,11 @@ const CartContainer = () => {
 
   if (cart?.length === 0) {
     return (
-      <section>
-        <h2 className="cart_title">Your Cart is Empy</h2>
-        <button onClick={fetchData}>Refresh</button>
+      <section className="cart_empty">
+        <h2 className="cart_title">Your Cart is Empty</h2>
+        <button className="button_refresh" onClick={fetchData}>
+          Refresh
+        </button>
       </section>
     );
   }
@@ -24,9 +26,12 @@ const CartContainer = () => {
           return <CartItem key={item.id} {...item} />;
         })}
       </div>
+      <div className="border"></div>
       <footer>
         <button onClick={clearCart}>Clear All</button>
-        <span>Total : {total}$</span>
+        <p>
+          Total :<span> {total}$</span>
+        </p>
       </footer>
     </section>
   );
