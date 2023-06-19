@@ -10,7 +10,6 @@
 .cartitem > div {
   display: flex;
   align-items: center;
-  /* flex: 1; */
 }
 
 .cartitem_img {
@@ -21,8 +20,19 @@
 .cartitem_amount {
   display: flex;
   width: 100px;
-  /* flex: 0.3; */
   align-items: center;
   justify-content: space-between;
-  /* flex-direction: ; */
+}
+
+button {
+  height: 25px;
+  width: 70px;
+  background-color: #cc8800;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
 }
